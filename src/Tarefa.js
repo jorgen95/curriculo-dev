@@ -1,3 +1,5 @@
+// src/Tarefa.js
+
 import React, { useContext } from 'react';
 import { GerenciadorContext } from './GerenciadorContext'; 
 
@@ -5,13 +7,16 @@ function Tarefa({ tarefa }) {
   const { dispatch } = useContext(GerenciadorContext);
 
   const marcarOuDesmarcar = () => {
+    // Uso o dispatch para avisar o Reducer que essa tarefa mudou de status
     dispatch({ type: 'MUDAR_STATUS', payload: tarefa.id });
   };
 
   const cliqueParaRemover = () => {
+    // Uso o dispatch para pedir para remover essa tarefa (passo o ID)
     dispatch({ type: 'REMOVER_TAREFA', payload: tarefa.id });
   };
 
+  // Renderiza a linha (<tr>) da tabela. Mais fácil de alinhar assim
   return (
     <tr className={`tarefa-linha ${tarefa.finalizada ? 'finalizada' : ''}`}>
       

@@ -1,3 +1,6 @@
+/* src/App.css */
+
+/* Container principal, centralizando o conteúdo */
 .container {
   background-color: white;
   padding: 20px 30px;
@@ -8,6 +11,7 @@
   margin: 20px auto;
 }
 
+/* Estilo para as caixas de Adicionar e Listar */
 .painel-card {
   border: 1px solid #ddd; 
   border-radius: 6px;
@@ -24,18 +28,23 @@
   text-align: left; 
 }
 
+/* --- Estilo do Formulário de Adicionar Tarefa --- */
 .adicionar-form { 
   display: flex; 
   align-items: center; 
   margin-bottom: 15px;
   gap: 10px; 
 }
+
+/* Campo de texto (Input) */
 .adicionar-form input[type="text"] {
   flex-grow: 1; 
   padding: 10px;
   border: 1px solid #ccc;
   border-radius: 4px;
 }
+
+/* Seletor de Prioridade */
 .adicionar-form .select-prioridade { 
   padding: 9px;
   border: 1px solid #ccc;
@@ -44,6 +53,7 @@
   background-color: #fff;
 }
 
+/* --- Estilo dos Filtros (Botões Todas/Pendentes/Concluídas) --- */
 .filtros {
   width: 90%; 
   max-width: 550px;
@@ -62,11 +72,14 @@
 .filtros button:hover {
   background-color: #5a6268;
 }
+
+/* Estilo para o botão que está ativo/selecionado */
 .filtros button.selecionado {
   background-color: #007bff; 
   font-weight: bold;
 }
 
+/* --- Estilo da Tabela de Tarefas --- */
 .lista-container {
     width: 90%; 
     max-width: 550px;
@@ -80,6 +93,7 @@
     margin: 0 auto; 
 }
 
+/* Cabeçalho da tabela (Tarefa, Prioridade, Ações) */
 .tabela-tarefas th {
     text-align: left;
     padding: 0 10px 10px 0;
@@ -96,32 +110,42 @@
     border-bottom: none;
 }
 
+/* --- Detalhes da Coluna de Descrição --- */
 .tarefa-descricao-coluna {
     width: 60%; 
     padding-right: 25px; 
     display: flex; 
     align-items: center;
 }
+
+/* Checkbox */
 .tarefa input[type="checkbox"] {
   width: 20px;
   height: 20px;
   cursor: pointer;
   margin-right: 10px; 
 }
+
+/* Descrição da tarefa */
 .tarefa-descricao {
     margin-left: 10px;
     cursor: pointer;
     flex-grow: 1;
 }
+
+/* Estilo para tarefas concluídas (riscado e cinza) */
 .tarefa-linha.finalizada .tarefa-descricao {
   text-decoration: line-through; 
   color: #888; 
 }
 
+/* --- Detalhes das Colunas de Prioridade e Ações --- */
 .tarefa-prioridade-coluna {
     width: 20%; 
     text-align: center;
 }
+
+/* --- Cores das Tags de Prioridade --- */
 .prioridade-tag {
   font-size: 0.85em; 
   padding: 5px 10px;

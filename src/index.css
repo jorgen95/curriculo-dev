@@ -1,3 +1,6 @@
+/* src/index.css */
+
+/* --- Estilos Gerais da Página --- */
 body {
   font-family: Arial, sans-serif;
   background-color: #f4f4f4;
@@ -9,11 +12,13 @@ body {
   min-height: 100vh;
 }
 
+/* --- Estilos de Títulos --- */
 h1, h2 {
   color: #333;
   text-align: center;
 }
 
+/* --- Estilos Padrão dos Botões --- */
 button {
   background-color: #007bff;
   color: white;
@@ -24,6 +29,7 @@ button {
   margin: 5px;
 }
 
+/* Estilo para quando o mouse passa por cima (efeito hover) */
 button:hover {
   background-color: #0056b3;
 }

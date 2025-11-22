@@ -1,3 +1,5 @@
+// src/Filtros.js
+
 import React, { useContext } from 'react';
 import { GerenciadorContext } from './GerenciadorContext'; 
 

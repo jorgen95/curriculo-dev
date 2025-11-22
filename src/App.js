@@ -1,3 +1,5 @@
+// src/App.js
+
 import React from 'react';
 import './App.css'; 
 
@@ -8,7 +10,7 @@ import ListaDeTarefas from './ListaDeTarefas';
 
 function App() {
   return (
-    
+    // Container principal da aplicação
     <div className="container"> 
       <h1>Gerenciador de Tarefas</h1>
       
